@@ -5,8 +5,9 @@ set -o errexit    # exit when command fails
 
 installnodemac() { \
   brew install lua
-  brew install node
-  brew install yarn
+  # @cuijian 20201012 去除全局安装的node和yarn
+  # brew install node
+  # brew install yarn
 }
 
 installnodeubuntu() { \
@@ -67,7 +68,9 @@ installcocextensions() { \
 
 cloneconfig() { \
   echo "Cloning Nvim Mach 2 configuration"
-  git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
+  # @cuijian 修改clone地址
+  # git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
+  git clone -b jiancui https://github.com/jian-cui/nvim.git ~/.config/nvim
 }
 
 moveoldnvim() { \
