@@ -172,3 +172,6 @@ installcocextensions
 echo "I recommend you also install and activate a font from here: https://github.com/ryanoasis/nerd-fonts"
 
 echo "I also recommend you add 'set preview_images_method ueberzug' to ~/.config/ranger/rc.conf"
+
+# add new information
+echo "如果是在Mac上，请使用pip3 install ranger-fm代替ranger"
